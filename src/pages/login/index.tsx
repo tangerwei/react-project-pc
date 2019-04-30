@@ -1,8 +1,15 @@
 import React from 'react';
-import {observer} from 'mobx-react';
+import {inject, observer} from 'mobx-react';
+import { ILoginProps } from "./login.interface";
 
-const Login: React.FC = observer(()=> {
-    return (<div>
-        Login
-    </div>)
-})
+@inject("user")
+@observer
+class Login extends React.Component<ILoginProps>{
+    render(){
+        return (
+            <div>{this.props.user.age}</div>
+        )
+    }
+}
+
+export default Login;
