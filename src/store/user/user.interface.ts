@@ -1,4 +1,5 @@
 export interface IUser{
-    name: string;
-    age: number;
+    username: string;
+    password: string;
+    submitLogin: () => Promise<string>
 }

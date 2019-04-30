@@ -1,0 +1,8 @@
+{
+    "production":{
+        "baseURL": "http://www.google.com"
+    },
+    "development":{
+        "baseURL": "http://prd.greycdn.com:10000"
+    }
+}
