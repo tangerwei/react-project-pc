@@ -62,6 +62,7 @@
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
+    "source-map-explorer": "^1.8.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.3",
     "typescript": "3.4.5",
@@ -74,7 +75,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "analyze": "source-map-explorer build/static/js/main.*"
   },
   "eslintConfig": {
     "extends": "react-app"
